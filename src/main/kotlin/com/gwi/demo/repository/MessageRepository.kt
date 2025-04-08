@@ -1,4 +1,7 @@
 package com.gwi.demo.repository
 
-interface MessageRepository {
+import com.gwi.demo.model.Message
+import org.springframework.data.repository.CrudRepository
+
+interface MessageRepository : CrudRepository<Message, String> {
 }

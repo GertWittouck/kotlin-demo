@@ -1,5 +1,40 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### Kotlin - get all messages
+GET http://localhost:8080/
 
-###
+<> 2025-04-08T221006.200.json
+<> 2025-04-08T220802.200.json
+<> 2025-04-08T220700.200.json
+<> 2025-04-08T220500.200.json
+<> 2025-04-08T152021.200.json
+<> 2025-04-08T144833.200.json
+<> 2025-04-08T133239.200.json
+
+### Kotlin - Create new message
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "text": "Bonjour!"
+}
+
+<> 2025-04-08T220949.201.json
+<> 2025-04-08T220944.201.json
+<> 2025-04-08T220937.201.json
+<> 2025-04-08T220930.201.json
+<> 2025-04-08T220923.201.json
+<> 2025-04-08T152018.201.json
+<> 2025-04-08T152012.201.json
+<> 2025-04-08T152007.201.json
+<> 2025-04-08T152002.201.json
+<> 2025-04-08T144800.201.json
+<> 2025-04-08T144723.201.json
+<> 2025-04-08T144713.201.json
+<> 2025-04-08T144704.201.json
+
+### Kotlin - find message by ID
+@id = 0838cc3b-645b-4a9d-942f-fa5f477714d1
+GET http://localhost:8080/{{id}}
+
+<> 2025-04-08T221021.200.json
+<> 2025-04-08T220611.200.json
+<> 2025-04-08T152030.200.json
